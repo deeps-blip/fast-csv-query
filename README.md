@@ -1,6 +1,4 @@
-from pathlib import Path
 
-readme_content = """
 # 🧠 CSV Insight Engine
 
 A lightweight, full-stack data analysis and query tool that:
@@ -29,7 +27,7 @@ Built using **FastAPI**, **Jinja2**, **Bootstrap**, and **Gemini AI**, this proj
 ---
 
 ## 📁 Project Structure
-
+```yaml
 fast-csv-query/
 ├── app/
 │ ├── main.py
@@ -55,7 +53,7 @@ fast-csv-query/
 ├── requirements.txt
 ├── README.md
 
-
+```
 ---
 
 ## 🛠️ How to Run
@@ -81,27 +79,28 @@ GOOGLE_API_KEY=your-gemini-api-key
 ```bash
 uvicorn app.main:app --reload
 ```
-##🔐 Authentication
+---
+## 🔐 Authentication
 Both the API and UI are protected using HTTP Basic Auth.
 
 You'll be prompted for credentials when:
 
 Accessing the upload/query pages
 
-Hitting any /api/* endpoints
+Hitting any /api/* endpoints, these are set in your config.py 
 
-These credentials are set in your config.py
 
-##🤖 Gemini Integration
+---
+## 🤖 Gemini Integration
 The /query page includes an AI assistant that can answer questions about your uploaded CSV files.
 
 Behind the scenes, it uses Gemini API to parse your context and respond accordingly.
 
-Example prompt:
+Example prompt: which company has the highest revenue?
 
-"Which company has the highest revenue?"
 
-##📦 Sample API Usage
+---
+## 📦 Sample API Usage
 ```bash
 curl -u admin:admin http://localhost:8000/api/tables
 curl -u admin:admin http://localhost:8000/api/table/your_table_name?search=India
@@ -109,29 +108,21 @@ curl -u admin:admin -X POST http://localhost:8000/api/ask \\
   -H "Content-Type: application/json" \\
   -d '{"question": "Top city by population", "context": "City,Population\\nDelhi,20000000\\nMumbai,18000000"}'
 ```
-##💻 Screenshots
+---
+## 💻 Screenshots
 
-![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-37-17.png)
+![image alt](https://github.com/deeps-blip/fast-csv-query/blob/919ada291dd0a6936ca4da049ab499487ff88f29/Screenshot%20from%202025-06-29%2020-15-48.png) ![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-37-17.png) 
 ![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-37-43.png)
 ![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-38-02.png)
 ![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-38-19.png)
 ![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-38-30.png)
 ![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-38-53.png)
-
-##📜 License
+---
+## 📜 License
 Free and Open-Source for all the written code except the API KEY 
-
-##🧑‍💻 Author
+---
+## 🧑‍💻 Author
 Built and maintained by Deepith A, Cybersecurity student & open-source contributor.
 
 Minimal. Fast. Practical.
-"""
-readme_path = Path("/mnt/data/README.md")
-readme_path.write_text(readme_content.strip())
-readme_path
-
-
-
-
-
-
+---
