@@ -1,6 +1,0 @@
-fastapi
-uvicorn
-sqlalchemy
-pandas
-jinja2
-python-multipart
