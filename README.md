@@ -126,6 +126,11 @@ Built and maintained by Deepith A, Cybersecurity student & open-source contribut
 
 Minimal. Fast. Practical.
 """
+readme_path = Path("/mnt/data/README.md")
+readme_path.write_text(readme_content.strip())
+readme_path
+
+
 
 
 
