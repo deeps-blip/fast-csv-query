@@ -1,4 +1,3 @@
-
 # 🧠 CSV Insight Engine
 
 A lightweight, full-stack data analysis and query tool that:
@@ -96,7 +95,7 @@ The /query page includes an AI assistant that can answer questions about your up
 
 Behind the scenes, it uses Gemini API to parse your context and respond accordingly.
 
-Example prompt: which company has the highest revenue?
+Example prompt: how many doctors?
 
 
 ---
@@ -110,19 +109,21 @@ curl -u admin:admin -X POST http://localhost:8000/api/ask \\
 ```
 ---
 ## 💻 Screenshots
+![Screenshot from 2025-06-29 20-15-48](https://github.com/user-attachments/assets/bfe436c8-426a-4f57-a985-2fccf0a34705) ![Screenshot from 2025-06-29 17-37-17](https://github.com/user-attachments/assets/38d3a4e6-6318-4be6-a85c-165c57c2933e)
+![Screenshot from 2025-06-29 17-37-43](https://github.com/user-attachments/assets/f7c3716b-14b8-4d0b-8199-80b5d2b35ddc)
+![Screenshot from 2025-06-29 17-38-02](https://github.com/user-attachments/assets/3673e5e8-ab35-4ce8-8570-007e0bd69c88)
+![Screenshot from 2025-06-29 17-38-19](https://github.com/user-attachments/assets/90a90eb7-3949-4709-acdf-e21e57cd7925)
+![Screenshot from 2025-06-29 17-38-30](https://github.com/user-attachments/assets/90615f68-4a9e-4001-b8b1-876aefbec610)
+![Screenshot from 2025-06-29 17-38-53](https://github.com/user-attachments/assets/b0b52117-61bf-421a-b8bf-cdf4f5b2d455)
 
-![image alt](https://github.com/deeps-blip/fast-csv-query/blob/919ada291dd0a6936ca4da049ab499487ff88f29/Screenshot%20from%202025-06-29%2020-15-48.png) ![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-37-17.png) 
-![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-37-43.png)
-![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-38-02.png)
-![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-38-19.png)
-![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-38-30.png)
-![image alt](https://github.com/deeps-blip/fast-csv-query/blob/487cf1bae632dd67c876e44ea014189a1f7a9cac/Screenshot%20from%202025-06-29%2017-38-53.png)
 ---
 ## 📜 License
-Free and Open-Source for all the written code except the API KEY 
+ Free and Open-Source for all the written code except the API KEY 
 ---
 ## 🧑‍💻 Author
 Built and maintained by Deepith A, Cybersecurity student & open-source contributor.
 
 Minimal. Fast. Practical.
 ---
+
+
