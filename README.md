@@ -60,7 +60,7 @@ fast-csv-query/
 1. **Clone this repo**
 
 ```bash
-git clone https://github.com/yourusername/fast-csv-query.git
+git clone https://github.com/deeps-blip/fast-csv-query.git
 cd fast-csv-query
 ```
 2. **Create a Virtual Environment**
