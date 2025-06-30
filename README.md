@@ -102,9 +102,9 @@ Example prompt: how many doctors?
 ## 📦 Sample API Usage
 ```bash
 curl -u admin:admin http://localhost:8000/api/tables
-curl -u admin:admin http://localhost:8000/api/table/your_table_name?search=India
-curl -u admin:admin -X POST http://localhost:8000/api/ask \\
-  -H "Content-Type: application/json" \\
+curl -u admin:admin "http://localhost:8000/api/table/your_table_name?search=India"
+curl -u admin:admin -X POST "http://localhost:8000/api/ask" \
+  -H "Content-Type: application/json" \
   -d '{"question": "Top city by population", "context": "City,Population\\nDelhi,20000000\\nMumbai,18000000"}'
 ```
 ---
